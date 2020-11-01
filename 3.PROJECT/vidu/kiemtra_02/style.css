@@ -1,0 +1,11 @@
+.list-course {
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.row {
+    background-color: burlywood;
+    font-weight: bold;
+    text-align: center;
+}

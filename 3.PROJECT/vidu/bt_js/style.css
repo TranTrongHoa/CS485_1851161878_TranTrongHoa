@@ -1,0 +1,16 @@
+.May_giat01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.May_giat02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_sp {
+    display: flex;
+    text-align: center;
+}

@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kênh tin tức giải trí-Xã hội-Kenh14.vn</title>
+    <title>Kênh tin tức giải trí - Xã hội - Kenh14.vn</title>
     <!--Bootstraps 4-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
     <!--Fontawesome -->
     <script src="https://kit.fontawesome.com/1534cbf1d9.js" crossorigin="anonymous"></script>
 
@@ -19,7 +17,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 padding-0">
                 <div class="tool-bar01">
                     <ul>
                         <li><a class="nav-link" href="#"><i class="fas fa-star" style="color:red"></i> QUIZZ</a></li>
@@ -31,7 +29,9 @@
                 </div>
                 <div class="tool-bar02">
                     <ul>
-                        <img class="logo_top" href="#" src="./image/logo_kenh14.ico"></img>
+                        <a href="index.php">
+                            <img class="logo_top" src="./image/logo_kenh14.ico"></img>
+                        </a>
                         <h4><span style="color:#FFFF;font-size: 20px;padding-top: 5px;">Kênh14.VN</span><br><span style="color: brown; font-size: 15px;">Kênh giải trí-xã hội</span></h4>
                         <li><a href="#" title="Hoa hậu Việt Nam 2020">#Hoa hậu Việt Nam 2020</a></li>
                         <li><a href="#" title="Lũ lụt ở miền Trung">#Lũ lụt ở miền Trung</a></li>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="nav-menu">
                     <ul>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-home"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php"><i class="fas fa-home"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Star</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">TV Show</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Ciné</a></li>
@@ -72,19 +72,23 @@
                 <!--Menu sau khi responsive sẽ thấy ở bars -->
                 <div class="nav-menu-responsive">
                     <ul>
-                        <li><a class="nav-link-responsive" href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a class="nav-link-responsive" href="index.php"><i class="fas fa-home"></i> Home</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-star"></i> Star</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-tv"></i> TV Show</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-handshake"></i> Ciné</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-music"></i> Musik</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-vest"></i> Beauty&Fashion</a></li>
-                        <li><a class="nav-link-responsive" href="#"><i class="fas fa-shopping-cart"></i> Xem Mua Luôn</a></li>
-                        <li><a class="nav-link-responsive" href="#"><i class="fas fa-house-user"></i> Đời sống</a></li>
+                        <li><a class="nav-link-responsive" href="#"><i class="fas fa-shopping-cart"></i> Xem Mua
+                                Luôn</a></li>
+                        <li><a class="nav-link-responsive" href="#"><i class="fas fa-house-user"></i> Đời sống</a>
+                        </li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-child"></i> Ăn-Quẩy-Đi</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-blog"></i> Xã hội</a></li>
-                        <li><a class="nav-link-responsive" href="#"><i class="fas fa-globe-asia"></i> Thế giới</a></li>
+                        <li><a class="nav-link-responsive" href="#"><i class="fas fa-globe-asia"></i> Thế giới</a>
+                        </li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-futbol"></i> Sport</a></li>
-                        <li><a class="nav-link-responsive" href="#"><i class="fas fa-graduation-cap"></i> Học đường</a></li>
+                        <li><a class="nav-link-responsive" href="#"><i class="fas fa-graduation-cap"></i> Học
+                                đường</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fab fa-youtube"></i> Video</a></li>
                     </ul>
                     <!-- Nút close trong bars -->
@@ -102,25 +106,21 @@
 
             </div>
             <!--Banner quảng cáo đầu-->
-            <div class="col-md-12">
+            <div class="col-md-12 padding-0">
                 <div class="banner_quangcao">
                     <a href="#" target=" _blank">
                         <img src="./image/banner_quangcao1.gif">
                     </a>
                 </div>
             </div>
-
-
-            <!-- Bài viết-->
-            <div class="col-md-8">
+            <!-- Bài viết -->
+            <div class="col-md-8 padding-0">
                 <div class="baiviet_01">
                     <a href="#" target="_blank">
                         <img src="./image/baiviet_01.jpg" alt="Phép màu trong vụ sạt lở đất ở Trà Leng: Đã cứu sống được 33 người, tiếp tục tìm kiếm 13 nạn nhân mất tích">
                     </a>
                     <h2 class="tieude_baiviet_01">
-                        <a href="#" target="_blank" title="Phép màu trong vụ sạt lở đất ở Trà Leng: Đã cứu sống được 33 người, tiếp tục tìm kiếm 13 nạn nhân mất tích">Phép
-                            màu trong vụ sạt lở đất ở Trà Leng: Đã cứu sống được 33 người, tiếp tục tìm kiếm 13 nạn
-                            nhân mất tích</a>
+                        <a href="#" target="_blank" title="Phép màu trong vụ sạt lở đất ở Trà Leng: Đã cứu sống được 33 người, tiếp tục tìm kiếm 13 nạn nhân mất tích">Phép màu trong vụ sạt lở đất ở Trà Leng: Đã cứu sống được 33 người, tiếp tục tìm kiếm 13 nạn nhân mất tích</a>
                     </h2>
                     <p class="noidungngan_baiviet_01">
                         Một quả đồi lớn bị sạt lở đã vùi lấp một ngôi làng tại huyện miền núi tỉnh Quảng Nam, khiến nhiều người mất tích. Thủ tướng Chính phủ yêu cầu các cơ quan liên quan bằng mọi biện pháp cần thiết khẩn trương cứu hộ, cứu ...
@@ -131,39 +131,95 @@
                         <img src="./image/baiviet_02.png" alt="Infographic: Chỉ trong 2 ngày, 5 vụ sạt lở xảy ra liên tiếp khiến gần 20 người chết, nhiều người mất tích và bị thương tại Quảng Nam">
                     </a>
                     <h2 class="tieude_baiviet_02">
-                        <a href="#" target="_blank" title="Infographic: Chỉ trong 2 ngày, 5 vụ sạt lở xảy ra liên tiếp khiến gần 20 người chết, nhiều người mất tích và bị thương tại Quảng Nam">Infographic:
-                            Chỉ trong 2 ngày, 5 vụ sạt lở xảy ra liên tiếp khiến gần 20 người chết, nhiều người mất
-                            tích và bị thương tại Quảng Nam</a>
+                        <a href="#" target="_blank" title="Infographic: Chỉ trong 2 ngày, 5 vụ sạt lở xảy ra liên tiếp khiến gần 20 người chết, nhiều người mất tích và bị thương tại Quảng Nam">Infographic: Chỉ trong 2 ngày, 5 vụ sạt lở xảy ra liên tiếp khiến gần 20 người chết, nhiều người mất tích và bị thương tại Quảng Nam</a>
                     </h2>
                     <p class="noidungngan_baiviet_02">
 
                     </p>
-                    <div class="baiviet_03">
-
+                </div>
+                <div class="baiviet_03">
+                    <!--Slideshow tin tức -->
+                    <i class="fas fa-chevron-left prev"></i>
+                    <i class="fas fa-chevron-right next"></i>
+                    <div class="slideshow">
+                        <div class="post">
+                            <a href="single.php">
+                                <img src="./image/slideshow_01.jpg" alt="" class="slider-image">
+                                <div class="post-info">
+                                    <p>
+                                        <a href="single.php">Show Hương Giang đối đầu cùng antifan: Chịu trách nhiệm nếu bị phát hiện dàn dựng nhưng xem xong cảm giác ngược lại!</a>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="post">
+                            <a href="single.php">
+                                <img src="./image/slideshow_02.jpg" alt="" class="slider-image">
+                                <div class="post-info">
+                                    <p>
+                                        <a href="single.php">Thuỷ Tiên thông báo ngừng hỗ trợ tại Hải Lăng, Quảng Trị do có nhiều người khá giả "đeo vàng, sơn móng chân" đến nhận tiền</a>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="post">
+                            <a href="single.php">
+                                <img src="./image/slideshow_03.jpg" alt="" class="slider-image">
+                                <div class="post-info">
+                                    <p>
+                                        <a href="single.php"><br>SofM: 8 năm từ "thằng cu khu Cầu Giấy" đến mức lương 5,5 tỷ/ tháng và giấc mơ vô địch thế giới</a>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="post">
+                            <a href="single.php">
+                                <img src="./image/slideshow_04.jpg" alt="" class="slider-image">
+                                <div class="post-info">
+                                    <p>
+                                        <a href="single.php">Thủy Tiên lên tiếng về vụ cán bộ thôn thu lại 400 triệu đồng cứu trợ, làm rõ chuyện bà con chê bánh chưng gây xôn xao</a>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="post">
+                            <a href="single.php">
+                                <img src="./image/slideshow_05.jpg" alt="" class="slider-image">
+                                <div class="post-info">
+                                    <p>
+                                        <a href="single.php">Dàn sao thế giới "chặt chém" Halloween: Nancy (MOMOLAND) hot nhất Kpop, Kylie chơi trội vẫn để thua bà hoàng Heidi Klum</a>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Quảng cáo bên cạnh-->
-            <div class="col-md-4">
+            <div class="col-md-4 padding-0">
                 <div class="poster_quangcao">
                     <a href="#" target="_blank">
                         <img src="./image/poster_quangcao_03.jpg"></img>
+                    </a>
+                    <a href="#" target="_blank">
                         <img src="./image/poster_quangcao_01.jpg"></img>
+                    </a>
+                    <a href="#" target="_blank">
                         <img src="./image/poster_quangcao_02.jpg"></img>
                     </a>
+
                 </div>
             </div>
-
         </div>
     </div>
-    <!-- -->
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Slick Carousel -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- My JS-->
     <script src="./JS/javascript.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
