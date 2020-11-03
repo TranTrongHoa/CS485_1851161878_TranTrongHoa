@@ -1,15 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
 li a {
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
 }
 
 h1,
@@ -20,6 +26,7 @@ h5,
 h6 {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    margin: 5px;
 }
 
 body {
@@ -192,6 +199,9 @@ body {
     }
 }
 
+
+/*Menu khi responsive*/
+
 .nav-menu-responsive {
     margin: 0;
     padding: 0;
@@ -253,6 +263,9 @@ body {
     -o-transform: translateX(0%);
 }
 
+
+/* Banner quảng cáo*/
+
 .banner_quangcao {
     margin: 0;
     padding: 0;
@@ -279,9 +292,13 @@ body {
     border-right: 1px solid #D8D8D8;
 }
 
+
+/* Bài viết trái */
+
 .baiviet_01 {
     width: 60%;
     float: left;
+    padding: 10px auto;
 }
 
 .baiviet_01 h2 {
@@ -289,6 +306,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 22px;
+    text-decoration: none;
 }
 
 .baiviet_01 p {
@@ -304,6 +322,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* Bài viết phải*/
 
 .baiviet_02 {
     float: left;
@@ -323,13 +344,15 @@ body {
     margin-right: auto;
 }
 
+
+/* Slideshow */
+
 .baiviet_03 {
     width: 100%;
     height: 300px;
     overflow: hidden;
     padding: 10px 0px 0px 0px;
     border-top: 2px solid orange;
-    ;
     border-bottom: 2px solid orange;
 }
 
@@ -344,6 +367,9 @@ body {
     -o-border-radius: 50px;
     margin: 50px;
 }
+
+
+/* Phần quảng cáo bên phải */
 
 .col-md-4 {
     max-width: 100%;
@@ -378,18 +404,23 @@ body {
     margin: 0px 10px;
 }
 
-.prev {
+.baiviet_03 {
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.baiviet_03 .prev {
     position: absolute;
-    top: 49%;
+    top: 40%;
     left: 0%;
     font-size: 2em;
     color: orange;
     z-index: 2;
 }
 
-.next {
+.baiviet_03 .next {
     position: absolute;
-    top: 49%;
+    top: 40%;
     right: 0%;
     font-size: 2em;
     color: orange;
@@ -403,4 +434,69 @@ body {
 
 .next .prev .slideshow {
     position: absolute;
+}
+
+
+/* Danh sách các bài viết */
+
+.list_baiviet .post {
+    width: 95%;
+    height: 220px;
+    margin: 10px auto;
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.list_baiviet .post .read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #005255;
+    background: transparent;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+.list_baiviet .post .read-more:hover {
+    color: black;
+    background: #008489;
+    border: 1px solid #008489;
+    transition: .5s;
+}
+
+.list_baiviet .post .post-image {
+    width: 30%;
+    height: 65%;
+    float: left;
+    margin: 20px 0 0 0;
+}
+
+.list_baiviet .post .post-preview {
+    width: 70%;
+    float: right;
+    padding: 10px;
+}
+
+.post-preview h3 {
+    font-size: 20px;
+}
+
+.btn {
+    padding: .3rem 0.5rem;
+    background-color: #006669;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+}
+
+.btn:hover {
+    color: white !important;
+    background: #005255;
 }
