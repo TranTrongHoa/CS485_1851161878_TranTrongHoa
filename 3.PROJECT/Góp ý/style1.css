@@ -1,0 +1,10 @@
+.lienhe-gopy {
+    padding: 0;
+    margin: 0;
+    background-color: burlywood;
+}
+
+.lienhe-gopy .heading {
+    text-align: center;
+    padding: 20px;
+}

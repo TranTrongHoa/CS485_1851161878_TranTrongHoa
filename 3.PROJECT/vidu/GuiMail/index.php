@@ -9,21 +9,21 @@ if( isset($_POST['submit']) ) {
     $thongdiep = trim( strip_tags( $_POST['thongdiep'] ) );
  
     //điền email nhận tại đây
-    $to = "kuhoahb@gmail.com";
+    $to = "kuhoahb1@gmail.com";
     $tieudethu = "Liên hệ từ $hoten";           
     $noidungthu = "
     <strong>Họ tên: </strong> $hoten<br/>
     <strong>Email: </strong> $email<br/>
     <strong>Tiêu đề: </strong> $tieude<br/>
     <strong>Thông điệp: </strong> $thongdiep<br/>
-    <i>Thư được gửi từ liên hệ của website https://cse.tlu.edu.vn</i>";
+    <i>Thư được gửi từ liên hệ của Kênh14.VN của Hòa</i>";
      
     //dùng mail test, đừng dùng mail chính thức
-    $from = "web2code2vn@gmail.com";
+    $from = "kuhoahb@gmail.com";
  
     //pass email gmail
     $p = "Kuhoa2522";
-    $m -> sendMailFromLocalhost($to, $from, $tennguoigui="Web2Code2Vn", $tieudethu, $noidungthu, $from, $p, $error);
+    $m -> sendMailFromLocalhost($to, $from, $hoten, $tieudethu, $noidungthu, $from, $p, $error);
     if( $error != '' ) {
         $loi['guimail'] = "Gửi mail không thành công";
     }else {
