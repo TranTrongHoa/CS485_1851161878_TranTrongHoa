@@ -23,18 +23,18 @@
 	<form action="register_xuly.php" class="signup-form" method="POST">
 		<div class="form-group">
 		<label for="" class="form-label">Tên tài khoản</label>
-		<input type="text" class="form-control" id="txtUserName" name="txtUserName" placeholder="Eg: Trong Hoa">
+		<input type="text" class="form-control" id="txtUserName" name="txtUserName" placeholder="Ví dụ : kuhoahb">
     </div>
 	<div class="form-group">
 		<label for="" class="form-label">Email</label>
-		<input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Eg: 1851161878@e.tlu.edu.vn">
+		<input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Ví dụ : 1851161878@e.tlu.edu.vn">
     </div>
     <div class="form-group">
             <label for="" class="form-label">Mật khẩu</label>
             <input type="password" class="form-control" name="txtPassword" id="txtPassword" placeholder="">
       </div>
       <div class="form-group">
-            <label for="">Xác nhận mật khẩu</label>
+            <label for="" class="form-label">Xác nhận mật khẩu</label>
             <input type="password" class="form-control" name="txtPassword2" id="txtPassword2" placeholder="">
       </div>
 	  <div class="form-group">

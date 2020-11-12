@@ -25,7 +25,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Update Record</title>
+    <title>Sửa thông tin</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,11 +45,11 @@
     <div class="container">
       <div class="row align-center">
             <div class="col-12 col-md-10">
-            <h2>Update Record</h2>
+            <h2>Sửa thông tin</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]).'?id='.$_GET['id']; ?>" method="post" class="boder border-success mt-5" >
-                <p>Plese edit the input values and submit to update the record.</p>
+                <p>Vui lòng chỉnh sửa thông tin và lưu lại.</p>
                 <div class="form-group ">
-                    <label><strong> User Name <span class="text-danger"></span></strong></label>
+                    <label><strong>Tên tài khoản<span class="text-danger"></span></strong></label>
                     <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                 </div>
                 <div class="form-group">
@@ -57,8 +57,8 @@
                     <input type="email" name="email" class="form-control" value="<?php echo $email; ?>">
                 </div>
                 <div class="form-group">
-                    <input type="submit" name="submit" class="btn btn-primary" value="Save">
-                    <a name="" id="" class="btn btn-light border" href="index.php" role="button">Cancel</a>
+                    <input type="submit" name="submit" class="btn btn-primary" value="Lưu lại">
+                    <a name="" id="" class="btn btn-light border" href="index-user.fa-php" role="button">Hủy</a>
                 </div>
             </form>
             </div>

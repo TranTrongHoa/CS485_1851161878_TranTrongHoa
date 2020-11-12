@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="style01.css">
 
 </head>
-<body><div class="container-fluid">
+<body>
+<div class="container-fluid">
         <div class="row">
             <div class="col-md-12 padding-0">
                 <div class="tool-bar01">
@@ -97,70 +98,36 @@
                     </label>
                 </div>
             </div>
-    <div class="container-fluid">
-        <div class="row">
+
             <div class="col-md-3">
-            <div id="card-418071">
-				<div class="card">
-                <div class="card-header">
-						 <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="index-post.php"><i class="fas fa-book-open"></i> Quản lý bài viết</a>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header">
-						 <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="#"><i class="fas fa-flag"></i> Quản lý quảng cáo</a>
-					</div>
-                </div>
-                <div class="card">
-					<div class="card-header">
-						 <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="index-user.php"><i class="fas fa-user"></i> Quản lý tài khoản</a>
-					</div>
-                </div>
-                <div class="card">
+                <div id="card-418071">
+				    <div class="card">
+                        <div class="card-header">
+						    <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="index-post.php"><i class="fas fa-book-open"></i> Quản lý bài viết</a>
+					    </div>
+				    </div>
+				    <div class="card">
 					    <div class="card-header">
-						    <a style="color:red"class="card-link" data-toggle="collapse" data-parent="#card-418071" href="logout.php"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+						    <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="#"><i class="fas fa-flag"></i> Quản lý quảng cáo</a>
 					    </div>
                     </div>
-			</div>
-            </div>
-            <div class="col-md-9">
-                <br>
-                <h1 style="text-align:center">Quản lý tài khoản</h1>
-                <a name="" id="" class="btn btn-success float-right" href="register.php" role="button">+ Thêm mới</a>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Tên tài khoản</th>
-                            <th>Email</th>
-                            <th>Vai trò</th>
-                            <th>Tạo lúc</th>
-                            <th>Sửa thông tin</th>
-                            <th>Xóa thông tin</th>
-                        </tr>
-                    </thead>
-                    <?php
-                        require_once 'connect.php';
-                        require_once 'function.php';
-                        $user = getAllUser();
-                        foreach ($user as $row) {
-                    ?>
-                    <tbody>
-                            <tr>
-                                <td scope="row"><?php echo $row['0'];?></td>
-                                <td><?php echo $row['1'];?></td>
-                                <td><?php echo $row['2'];?></td>
-                                <td><?php echo $row['3'];?></td>
-                                <td><?php echo $row['5'];?></td>
-                                <td><a href="sua.php?id= <?php echo $row['0'];?>"><i class="fa fa-pencil mr-2"></i></a></td>
-                                <td><a href="xoa.php?id= <?php echo $row['0'];?>"><i class="fas fa-trash-alt"></i></a></td>
-                            </tr> 
-                    <?php
-                        }  
-                    ?>
-                    </tbody>
-                </table>
-            </div>
+                
+                    <div class="card">
+					    <div class="card-header">
+						    <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="index-user.php"><i class="fas fa-user"></i> Quản lý tài khoản</a>
+					    </div>
+                    </div>
+                    <div class="card">
+					    <div class="card-header">
+						    <a style="color:red"class="card-link" data-toggle="collapse" data-parent="#card-418071" href="index-user.php"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+					    </div>
+                    </div>
+                </div>
+            </div>  
+                
+                <div class="col-md-9">
+                    ADMIN CHÍNH
+                </div>
         </div>
     </div>
     <footer>
