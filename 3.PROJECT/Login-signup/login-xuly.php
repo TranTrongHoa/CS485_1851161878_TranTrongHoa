@@ -19,7 +19,7 @@ if (empty($errors)){
             $password_hash = $row['password'];
             // echo $password_hash;
             if(password_verify($password,$password_hash)){
-                echo "Xin chào " . $email . ". Bạn đã đăng nhập thành công. <a href='index.php'>Về trang chủ</a>";
+                echo "Xin chào " . $email . ". Bạn đã đăng nhập thành công. <a href='index-user.php'>Về trang chủ</a>";
                 die();
             }else{
                 echo "Sai mật khẩu, vui lòng nhập lại";
@@ -29,8 +29,7 @@ if (empty($errors)){
         }
 }
 else{
-        // Co loi, hien thi lai loi cho nguoi dung biet
-        echo "Co loi nhap lieu ...";
+        echo "Có lỗi khi nhập dữ liệu ...";
     }
 
 ?>

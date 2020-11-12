@@ -23,11 +23,11 @@
 	<form action="register_xuly.php" class="signup-form" method="POST">
 		<div class="form-group">
 		<label for="" class="form-label">Tên tài khoản</label>
-		<input type="text" class="form-control" id="txtUserName" name="txtUserName" placeholder="Eg: John Doe">
+		<input type="text" class="form-control" id="txtUserName" name="txtUserName" placeholder="Eg: Trong Hoa">
     </div>
 	<div class="form-group">
 		<label for="" class="form-label">Email</label>
-		<input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Eg: johndoe@email.com">
+		<input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Eg: 1851161878@e.tlu.edu.vn">
     </div>
     <div class="form-group">
             <label for="" class="form-label">Mật khẩu</label>
@@ -38,10 +38,10 @@
             <input type="password" class="form-control" name="txtPassword2" id="txtPassword2" placeholder="">
       </div>
 	  <div class="form-group">
-		  <input type="submit" class="form-submit btn btn-primary" name="txtLogin" id="txtLogin"> Đăng ký</input>
+		  <input type="submit" class="form-submit btn btn-primary" name="txtLogin" id="txtLogin" value="Đăng ký"></input>
 	  </div>
 		</form>
-	<p class="signup-already">Bạn đã có tài khoản ? <a href="login.php" class="signup-already-link">Đăng nhập</a></p>
+	<p class="signup-already">Bạn đã có tài khoản ? <a href="login.php" class="signup-already-link" value="Đăng nhập">Đăng nhập</a></p>
 </div>
 </body>
 </html>

@@ -406,7 +406,7 @@
     
     .baiviet_03 .prev {
         position: absolute;
-        top: 30%;
+        top: 40%;
         left: 0%;
         font-size: 2em;
         color: orange;
@@ -415,7 +415,7 @@
     
     .baiviet_03 .next {
         position: absolute;
-        top: 30%;
+        top: 40%;
         right: 0%;
         font-size: 2em;
         color: orange;
@@ -580,7 +580,7 @@
     
     .slideshow_2 .next {
         position: absolute;
-        top: 40%;
+        top: 50%;
         right: 0%;
         font-size: 2em;
         color: orange;
