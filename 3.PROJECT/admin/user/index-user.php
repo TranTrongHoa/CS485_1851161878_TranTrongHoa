@@ -67,6 +67,7 @@
                 <!--Menu sau khi responsive sẽ thấy ở bars -->
                 <div class="nav-menu-responsive">
                     <ul>
+                    <li class="nav-item"><a class="nav-link" href="../../Login-signup/login.php"><i class="far fa-user-circle"> Đăng nhập</i></a></li>
                         <li><a class="nav-link-responsive" href="../../trangchinh.php"><i class="fas fa-home"></i> Home</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-star"></i> Star</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-tv"></i> TV Show</a></li>
@@ -133,19 +134,17 @@
                     <tr>
                         <td>
                             <form action="" method="GET">
-                                <input type="text" name="search-email" placeholder="Nhập email cần tìm" value="<?php
-                                if(isset($_GET['search-email'])) {
-                                    echo $_GET['search-email'];
-                                }
+                                <input type="text" name="search" placeholder="Nhập email cần tìm" value="<?php
+                                if(isset($_GET['search'])) {echo $_GET['search'];}
                                 ?>"/>
-                                <input type="submit" id="submitS" value="Tìm"/>
+                                <input type="submit" value="Tìm"/>
                                 <input type="button" value="Tất cả" onclick="window.location.href='index-user.php'"/>
-                               
                             </form>
                         </td>
                     </tr>
                     <a name="" id="" class="btn btn-success float-right" href="../../Login-signup/register.php" role="button">+ Thêm mới</a> 
                 </table>
+               <!-- // -->
                
                 <table style="text-align:center" class="table">
                     <thead>
@@ -159,42 +158,41 @@
                             <th>Xóa thông tin</th>
                         </tr>
                     </thead>
-
-                   <?php 
-                    require_once('../../Login-signup/connect.php');
-                    if(!empty($_GET['search-email'])){
-                        $keyword = $_GET['search-email'];
-                        $sql = "SELECT * FROM users WHERE email LIKE '%.$keyword.%' OR username LIKE '%.$keyword.%'";
-                    }
-                    else{
-                        $sql="SELECT * FROM users";
-                    }
-                    $result=mysqli_query($conn,$sql);
-                        if(!$result){
-                         die("Câu truy vấn sai");
-                    }
-                    ?>
                     <?php
-                        //require_once 'connect.php';
-                        require_once '../../Login-signup/function.php';
-                        $user = getAllUser();
-                        foreach ($user as $row) {
+                   require_once('../../Login-signup/connect.php');
+                   if(isset($_GET['search']) && !empty($_GET['search'])){
+                       $keyword = $_GET['search'];
+                       $sql = "SELECT * FROM users WHERE username LIKE '%$keyword%' OR email LIKE '%$keyword%'";
+                   }
+                   else{
+                       $sql="SELECT * FROM users";
+                   }
+                   $result=mysqli_query($conn,$sql);
+                       if(!$result){
+                        die("Câu truy vấn sai");
+                   }
+                    ?>
+
+                    <?php
+                     while($row = mysqli_fetch_assoc($result)) {
                     ?>
                     <tbody>
                             <tr>
-                                <td scope="row"><?php echo $row['0'];?></td>
-                                <td><?php echo $row['1'];?></td>
-                                <td><?php echo $row['2'];?></td>
-                                <td><?php echo $row['3'];?></td>
-                                <td><?php echo $row['5'];?></td>
-                                <td><a href="sua.php?id= <?php echo $row['0'];?>"><i class="fa fa-pencil mr-2"></i></a></td>
-                                <td><a href="xoa.php?id= <?php echo $row['0'];?>"><i class="fas fa-trash-alt"></i></a></td>
+                                <td scope="row"><?php echo $row['id'];?></td>
+                                <td><?php echo $row['username'];?></td>
+                                <td><?php echo $row['email'];?></td>
+                                <td><?php echo $row['role'];?></td>
+                                <td><?php echo $row['created_at'];?></td>
+                                <td><a href="sua.php?id= <?php echo $row['id'];?>"><i class="fa fa-pencil mr-2"></i></a></td>
+                                <td><a href="xoa.php?id= <?php echo $row['id'];?>"><i class="fas fa-trash-alt"></i></a></td>
                             </tr> 
                     <?php
                         }  
                     ?>
+
                     </tbody>
                 </table>
+    
             </div>
         </div>
     </div>

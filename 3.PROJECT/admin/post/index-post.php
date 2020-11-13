@@ -9,7 +9,7 @@
     <!--Fontawesome -->
     <script src="https://kit.fontawesome.com/1534cbf1d9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="/admin/admin.css">
+    <link rel="stylesheet" href="../admin.css">
 
 </head>
 <body>
@@ -68,6 +68,7 @@
                 <!--Menu sau khi responsive sẽ thấy ở bars -->
                 <div class="nav-menu-responsive">
                     <ul>
+                        <li class="nav-item"><a class="nav-link" href="../../Login-signup/login.php"><i class="far fa-user-circle"> Đăng nhập</i></a></li>
                         <li><a class="nav-link-responsive" href="../../trangchinh.php"><i class="fas fa-home"></i> Home</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-star"></i> Star</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-tv"></i> TV Show</a></li>
@@ -129,6 +130,7 @@
                 <div class="col-md-9">
                 <div class="admin-content clearfix">
       <div class="">
+          <br>
         <h2 style="text-align: center;">Chỉnh sửa bài viết</h2>
         <form action="create.php" method="post">
           <div class="input-group">
@@ -137,10 +139,10 @@
           </div>
           <div class="input-group">
             <label>Nội dung</label>
-            <textarea class="text-input" name="body" id="body"></textarea>
+
+            <textarea class="text-input" name="editor1" id="editor1"></textarea>
           </div>
           <div class="input-group">
-            <label>Hình ảnh</label>
             <input type="file" name="file-input" id="file-input" class="file">
           </div>
           <div class="input-group">

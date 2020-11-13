@@ -64,12 +64,13 @@
                             d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
                         </path>
                     </svg>
-                    
                 </label>
+                
                 <input type="checkbox" hidden id="check">
                 <!--Menu sau khi responsive sẽ thấy ở bars -->
                 <div class="nav-menu-responsive">
                     <ul>
+                        <li class="nav-item"><a class="nav-link" href="Login-signup/login.php"><i class="far fa-user-circle"> Đăng nhập</i></a></li>
                         <li><a class="nav-link-responsive" href="trangchinh.php"><i class="fas fa-home"></i> Home</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-star"></i> Star</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-tv"></i> TV Show</a></li>
@@ -310,7 +311,7 @@
                         </div>
                     </div>
                     <div class="bangxephang-right">
-
+                        
                     </div>
                 </div>
             </div>
@@ -378,8 +379,10 @@
             </div>
 
             <div class="col-md-4 padding-0">
-                <div class="poster_quangcao">
-                    Poster quảng cáo
+                <div class="poster_quangcao"> 
+                    <a href="#" target="_blank">
+                        <img src="./image/poster_quangcao_03.jpg"></img>
+                    </a>  
                 </div>
             </div>
 

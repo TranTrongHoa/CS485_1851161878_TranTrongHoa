@@ -33,6 +33,6 @@
 			<input type="submit" class="form-submit btn btn-primary" name="txtLogin" id="txtLogin" value="Đăng nhập"></input>
 	  	</div>
 	</form>
-		<p class="signup-already">Bạn chưa có tài khoản ?<a href="register.php" class="signup-already-link">Đăng ký</a></p>
+		<p class="signup-already">Bạn chưa có tài khoản ?<a href="register.php" class="signup-already-link"> Đăng ký</a></p>
 </body>
 </html>
