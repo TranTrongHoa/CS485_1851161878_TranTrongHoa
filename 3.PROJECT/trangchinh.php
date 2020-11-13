@@ -10,7 +10,7 @@
     <!--Fontawesome -->
     <script src="https://kit.fontawesome.com/1534cbf1d9.js" crossorigin="anonymous"></script>
     <!-- Style CSS-->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="tool-bar02">
                     <ul>
-                        <a href="index.php">
+                        <a href="trangchinh.php">
                             <img class="logo_top" src="./image/logo_kenh14.ico"></img>
                         </a>
                         <h4><span style="color:#FFFF;font-size: 20px;padding-top: 5px;">Kênh14.VN</span><br><span style="color: brown; font-size: 15px;">Kênh giải trí-xã hội</span></h4>
@@ -64,6 +64,7 @@
                             d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
                         </path>
                     </svg>
+                    
                 </label>
                 <input type="checkbox" hidden id="check">
                 <!--Menu sau khi responsive sẽ thấy ở bars -->
@@ -457,7 +458,7 @@
     <!--Slick Carousel -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- My JS-->
-    <script src="./JS/javascript.js"></script>
+    <script src="javascript.js"></script>
 </body>
 
 </html>

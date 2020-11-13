@@ -1,47 +1,76 @@
-<div class="container">
-      <div class="row mt-3">
-        <div class="col-6 mb-2">
-          <h1>Manager users</h1>
-        </div>
-        <div class="col-6 mb-2">
-          <a name="" id="" class="btn btn-success float-right" href="register.php" role="button">+ Add new Employee</a>
-        </div>
-        <table class="table table-dark table-striped table-hover table-bordered">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>User Name</th>
-              <th>Email</th>
-              <th>Role</th>
-              <th>Created_at</th>
-              <th>Updated_at</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-        <?php
-          require 'includes/config.php';
-          require 'includes/function.php';
-          $user = getAllUser();
-          foreach ($user as $row) {
-        ?>
+<?php
+  require_once('../../Login-signup/connect.php');
+  require_once('../../Login-signup/function.php');
+  $id = $_GET['id'];
+  $user = viewRecord($id);
+  foreach ($user as $row){
+    $username =  $row['1'];
+    $email = $row['2'];
+  }
+  
 
-            <tbody>
-              <tr>
-                <td><?php echo $row['0']; ?></td>
-                <td><?php echo $row['1']; ?></td>
-                <td><?php echo $row['2']; ?></td>
-                <td><?php echo $row['3']; ?></td>
-                <td><?php echo $row['5']; ?></td>
-                <td><?php echo $row['6']; ?></td>
-                <td>
-                    <a href="edit.php?id=<?php echo $row['0']; ?>"><i class="fa fa-pencil mr-2"></i></a>
-                    <a onclick="confirm_delete()" href="#" class="delete"><i class="fa fa-trash"></i></a>
-                </td>
-              </tr>
-            </tbody>
-          <?php
-          }
-          ?>
-        </table>
-      </div>
+  if($_SERVER["REQUEST_METHOD"] == "POST"){
+    global $conn;
+    $username = trim( strip_tags( $_POST['username'] ) );
+    $email = trim( strip_tags( $_POST['email'] ) );
+    $sql = "UPDATE users SET username = '$username', email = '$email' WHERE id ='$id'";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    header('Location: index-user.php');
+    exit();
+  }
+
+?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sửa thông tin</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+  <?php 
+    $id = $_GET['id'];
+    $user = viewRecord($id);
+    foreach ($user as $row){
+      $name =  $row['1'];
+      $email = $row['2'];
+    }
+  ?>
+    <div class="container">
+      <div class="row align-center">
+            <div class="col-12 col-md-10">
+            <h2>Sửa thông tin</h2>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]).'?id='.$_GET['id']; ?>" method="post" class="boder border-success mt-5" >
+                <p>Vui lòng chỉnh sửa thông tin và lưu lại.</p>
+                <div class="form-group ">
+                    <label><strong>Tên tài khoản<span class="text-danger"></span></strong></label>
+                    <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                </div>
+                <div class="form-group">
+                    <label for=""><strong>Email</strong></label>
+                    <input type="email" name="email" class="form-control" value="<?php echo $email; ?>">
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" class="btn btn-primary" value="Lưu lại">
+                    <a name="" id="" class="btn btn-light border" href="index-user.php" role="button">Hủy</a>
+                </div>
+            </form>
+            </div>
+        </div>
     </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

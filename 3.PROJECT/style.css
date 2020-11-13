@@ -1,0 +1,832 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+        margin: 0;
+        border: 0;
+    }
+    
+    li a {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    
+    .col-md-12 .tool-bar01 {
+        background-color: black;
+        height: 25px;
+        position: relative;
+    }
+    
+    .col-md-12 .tool-bar01 ul {
+        display: flex;
+        list-style: none;
+        margin-left: 50px;
+    }
+    
+    .col-md-12 .tool-bar01 li a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .col-md-12 .tool-bar02 {
+        background: #f0a52b;
+        height: 70px;
+        position: relative;
+    }
+    
+    .col-md-12 .tool-bar02 ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    .col-md-12 .tool-bar02 li a {
+        margin: 15px 0px 15px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        display: block;
+        height: 28px;
+        font-size: 15px;
+        line-height: 28px;
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, .5);
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+    }
+    
+    .tool-bar02 img {
+        margin: 4px 10px 0px 30px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .col-md-12 .nav-menu {
+        background: #a70e1a;
+        height: 40px;
+        position: relative;
+    }
+    
+    .col-md-12 .nav-menu ul {
+        display: flex;
+        list-style: none;
+        margin-left: 60px;
+    }
+    
+    .col-md-12 .nav-menu li a {
+        font-size: 15px;
+        color: #fff;
+        padding: 0 10px;
+        display: block;
+        text-decoration: none;
+        line-height: 40px;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .nav-menu ul li:hover a {
+        padding-top: 3px;
+    }
+    
+    .navbar-button {
+        width: 20px;
+        height: 20px;
+        color: black;
+        display: none;
+        margin: -32px 0px 0px 27px;
+        position: absolute;
+    }
+    /* Máy tính bảng loại to (Ipad) */
+    
+    @media only screen and (max-width: 768px) {
+        .tool-bar02 img {
+            height: 55px;
+            width: 55px;
+            margin-top: 5px;
+        }
+        .tool-bar02 h4 {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .col-md-12 .tool-bar02 li a {
+            display: none;
+        }
+        .tool-bar02 ul li a {
+            font-size: 5px;
+        }
+        .navbar-button {
+            display: block;
+        }
+        .col-md-12 .nav-menu li a {
+            display: none;
+        }
+        .banner_quangcao img {
+            max-width: 100%;
+        }
+        .col-md-8 .baiviet_01 {
+            max-width: 100%;
+        }
+        .col-md-8 .baiviet_01 img {
+            width: 380px;
+            height: 240px;
+        }
+        .col-md-8 .baiviet_02 {
+            max-width: 100%;
+        }
+        .col-md-8 .baiviet_02 img {
+            width: 180px;
+            height: 240px;
+        }
+        .col-md-4 .poster_quangcao {
+            max-width: 100%;
+        }
+        .col-md-4 .poster_quangcao img {
+            height: 200px;
+            width: 150px;
+            float: left;
+            margin: 10px 35px 10px 35px;
+        }
+        .slideshow {
+            max-width: 100%;
+            font-size: 12px;
+        }
+        .slideshow .post {
+            overflow: hidden;
+        }
+        .slideshow img {
+            width: 100%;
+            height: 150px;
+        }
+    }
+    
+    @media only screen and (max-width:538px) {
+        .col-md-12 .tool-bar01 li a {
+            font-size: 9px;
+        }
+        .col-md-8 .baiviet_01 {
+            width: 538px;
+            max-width: 100%;
+            border-bottom: 1px solid #ebebeb;
+        }
+        .col-md-8 .baiviet_02 {
+            width: 538px;
+            max-width: 100%;
+        }
+        .col-md-4 {
+            width: 538px;
+            max-width: 100%;
+        }
+        .list_baiviet {
+            width: 538px;
+            max-width: 100%;
+        }
+    }
+    /*Menu khi responsive*/
+    
+    .nav-menu-responsive {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        text-decoration: none;
+        list-style: none;
+        top: 135px;
+        width: 270px;
+        max-width: 100%;
+        background-color: #042331;
+        transform: translateX(-110%);
+        -webkit-transform: translateX(-110%);
+        -moz-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+        -o-transform: translateX(-110%);
+        transition: transform linear 0.2s;
+        -webkit-transition: transform linear 0.2s;
+        -moz-transition: transform linear 0.2s;
+        -ms-transition: transform linear 0.2s;
+        -o-transition: transform linear 0.2s;
+        z-index: 2;
+    }
+    
+    .nav-menu-responsive ul a {
+        text-decoration: none;
+        list-style: none;
+        color: #ffffff;
+        display: block;
+        padding: 8px 0;
+        font-size: 15px;
+        border-top: 1px solid rgba(255, 255, 255, .5);
+        border-bottom: 1px solid black;
+        padding-left: 50px;
+        transition: .4s;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+    }
+    
+    .nav-menu-responsive ul li:hover a {
+        padding-left: 70px;
+    }
+    
+    .nav-menu-close {
+        width: 20px;
+        height: 20px;
+        color: #666;
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+    }
+    
+    #check:checked~.nav-menu-responsive {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+    /* Banner quảng cáo*/
+    
+    .banner_quangcao {
+        margin: 0;
+        padding: 0;
+        height: 170px;
+        background-color: #f1f1f1;
+    }
+    
+    .banner_quangcao img {
+        height: 90%;
+        width: 950px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 0 0 0;
+        z-index: 1;
+    }
+    
+    .nav-menu-responsive .banner_quangcao {
+        position: absolute;
+    }
+    
+    .col-md-8 {
+        width: 100%;
+        border-right: 1px solid #D8D8D8;
+    }
+    /* Bài viết trái */
+    
+    .baiviet_01 {
+        width: 60%;
+        float: left;
+        padding: 10px;
+    }
+    
+    .baiviet_01 h2 {
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        text-decoration: none;
+        margin: 10px;
+    }
+    
+    .baiviet_01 p {
+        font-size: 14px;
+        line-height: 20px;
+        color: black;
+        margin: 10px 0;
+        font-weight: 400;
+    }
+    
+    .baiviet_01 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Bài viết phải*/
+    
+    .baiviet_02 {
+        float: left;
+        width: 40%;
+        padding: 10px;
+    }
+    
+    .baiviet_02 h2 {
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20.5px;
+        margin: 10px;
+    }
+    
+    .baiviet_02 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Phần quảng cáo bên phải */
+    
+    .col-md-4 {
+        max-width: 100%;
+    }
+    
+    .col-md-4 img {
+        width: 300px;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+    }
+    
+    .padding-0 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* SLIDESHOW TRÊN */
+    
+    .baiviet_03 {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        padding: 10px 0px 0px 0px;
+        border-top: 2px solid orange;
+        border-bottom: 2px solid orange;
+    }
+    
+    .bar {
+        width: 20px;
+        height: 20px;
+        border: 2px solid black;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        margin: 50px;
+    }
+    
+    .slideshow {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .slideshow .post {
+        display: inline-block;
+        width: 250px;
+        height: 300px;
+        margin: 0px 10px;
+    }
+    
+    .baiviet_03 .prev {
+        position: absolute;
+        margin-top: 13%;
+        left: 0%;
+        font-size: 2em;
+        color: orange;
+        z-index: 2;
+    }
+    
+    .baiviet_03 .next {
+        position: absolute;
+        margin-top: 13%;
+        right: 0%;
+        font-size: 2em;
+        color: orange;
+        z-index: 2;
+    }
+    
+    .slideshow .post .slider-image {
+        width: 100%;
+        height: 175px;
+    }
+    
+    .next .prev .slideshow {
+        position: absolute;
+    }
+    /* Danh sách các bài viết */
+    
+    .list_baiviet .post {
+        width: 95%;
+        height: 220px;
+        margin: 10px auto;
+        position: relative;
+        border-bottom: 1px solid #ebebeb;
+    }
+    
+    .list_baiviet .post .read-more {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        border: 1px solid #005255;
+        background: transparent;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    
+    .list_baiviet .post .read-more:hover {
+        color: black;
+        background: #008489;
+        border: 1px solid #008489;
+        transition: .5s;
+    }
+    
+    .list_baiviet .post .post-image {
+        width: 30%;
+        height: 70%;
+        margin: 10px 0;
+    }
+    
+    .list_baiviet .post .post-preview {
+        width: 70%;
+        float: right;
+        padding: 10px;
+    }
+    
+    .post-preview h3 {
+        font-size: 20px;
+    }
+    
+    .btn {
+        padding: .3rem 0.5rem;
+        background-color: #006669;
+        color: black;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        -webkit-border-radius: .25rem;
+        -moz-border-radius: .25rem;
+        -ms-border-radius: .25rem;
+        -o-border-radius: .25rem;
+    }
+    
+    .btn:hover {
+        color: white !important;
+        background: #005255;
+    }
+    
+    .trendAds {
+        width: 100%;
+    }
+    
+    .trendAds .main-contain-dangchuy {
+        width: 66.7%;
+        float: left;
+    }
+    /* Tin tức đáng chú ý */
+    
+    .trendAds .main-contain-dangchuy .recent-post-title {
+        height: 40px;
+        padding-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 38px;
+        text-transform: uppercase;
+        background: #222;
+        color: #fff;
+    }
+    
+    .trendAds .main-contain-dangchuy .dangchuy-left {
+        width: 100%;
+        float: left;
+        background: #343434;
+    }
+    
+    .trendAds .main-contain-dangchuy .dangchuy-left .post {
+        margin: 10px auto;
+        position: relative;
+        border-bottom: 1px solid #555;
+        margin: 0 20px;
+        padding: 20px 0;
+    }
+    
+    .trendAds .main-contain-dangchuy .dangchuy-left .post-image {
+        width: 30%;
+        height: 65%;
+    }
+    
+    .trendAds .main-contain-dangchuy .dangchuy-left .post .post-preview {
+        width: 70%;
+        float: right;
+        padding: 0 10px;
+        color: #FFF;
+    }
+    
+    .trendAds .bangxephang-right {
+        width: 33.3%;
+        float: left;
+        border: 1px solid green;
+        height: 500px;
+    }
+    /* SLIDESHOW DƯỚI */
+    
+    .slideshow_2 {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        padding: 10px 0px 0px 0px;
+        border-top: 2px solid orange;
+        border-bottom: 2px solid orange;
+        margin: 20px 0;
+    }
+    
+    .bar {
+        width: 20px;
+        height: 20px;
+        border: 2px solid black;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        margin: 50px;
+    }
+    
+    .slideshow_2 .prev {
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        font-size: 2em;
+        color: orange;
+        z-index: 2;
+    }
+    
+    .slideshow_2 .next {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        font-size: 2em;
+        color: orange;
+        z-index: 2;
+    }
+    
+    .slideshow {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .slideshow .post {
+        display: inline-block;
+        width: 250px;
+        height: 300px;
+        margin: 0px 10px;
+    }
+    
+    .slideshow .post .slider-image {
+        width: 100%;
+        height: 175px;
+    }
+    
+    .next .prev .slideshow {
+        position: absolute;
+    }
+    /** -----------------------------------------------------**/
+    /* Footer*/
+    
+    footer {
+        width: 1326px;
+        max-width: 100%;
+    }
+    
+    .footer-column1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        margin-top: 20px;
+    }
+    
+    .footer-column1-left {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        border: 1px solid rgb(231, 231, 231);
+        padding: 8.5px;
+        margin-right: 20px;
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: stretch;
+        margin-left: 15px;
+    }
+    
+    .two-link-1column {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    
+    .two-link-1column a:first-child {
+        border: 1px solid rgb(231, 231, 231);
+        padding: 5px;
+        margin-right: 10px;
+    }
+    
+    .two-link-1column a:last-child {
+        padding: 5px;
+    }
+    
+    .logo-left {
+        width: 60px;
+        height: 90px;
+    }
+    
+    .contact p:first-child {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .two-link-1column a {
+        font-size: 11px;
+        font-weight: bold;
+    }
+    
+    .contact-title {
+        font-size: 12px;
+        color: #777;
+    }
+    
+    .footer-column1-right {
+        width: 500px;
+        height: 130px;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+        background-position: center;
+        padding-left: 10px;
+    }
+    
+    .logo-right {
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+    }
+    
+    .footer-column1-right-column1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+        color: white;
+        margin-top: 10px !important;
+    }
+    
+    .footer-column1-right-column1-column2 a {
+        color: white !important;
+        font-size: 18px !important;
+    }
+    
+    .footer-column1-right-column1-column2 p {
+        color: white !important;
+        font-size: 12px !important;
+        line-height: 0px !important;
+    }
+    
+    .footer-column1-right-column2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+        padding-right: 10px;
+    }
+    
+    .footer-column1-right-column2 a {
+        background-color: white;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 2px;
+        margin-bottom: 5px;
+    }
+    
+    .footer-column2-title {
+        font-size: 14px;
+        font-weight: bold;
+        color: #555;
+    }
+    
+    .footer-column2-describe {
+        font-size: 13px;
+        color: #777;
+        line-height: 18px;
+        margin-top: -10px;
+    }
+    
+    .footer-column2-row1 a {
+        font-size: 10px;
+        font-weight: bold;
+        color: #777;
+    }
+    
+    .fa-map-marker-alt,
+    .fa-phone-alt {
+        color: #777;
+        margin-right: 10px;
+    }
+    
+    .messenger-k14 {
+        background-color: #047bea;
+        padding: 10px;
+        border-radius: 2px;
+        color: white !important;
+        width: fit-content;
+        margin-top: 10px;
+    }
+    
+    .see-more {
+        background-color: #fa5d37;
+        padding: 10px;
+        border-radius: 2px;
+        color: white !important;
+        width: fit-content;
+        margin-top: 10px;
+    }
+    
+    .see-more:hover {
+        background-color: #333;
+    }
+    
+    .footer-column2-row1,
+    .footer-column2-row2,
+    .footer-column2-row3 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: justify;
+        align-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 280px;
+    }
+    
+    .footer-column2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+        margin-top: 40px;
+    }
+    
+    .footer-column2-row1,
+    .footer-column2-row2 {
+        border-right: 1px solid rgb(231, 231, 231);
+    }
+    
+    .vccorp-footer-logo {
+        background-image: url(https://vccorp.mediacdn.vn/vccorp-s.png);
+        background-position: 0;
+        width: 100px;
+        height: 49px;
+    }
