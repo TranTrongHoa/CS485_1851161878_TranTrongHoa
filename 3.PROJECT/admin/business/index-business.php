@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý bài viết Kênh14.VN</title>
+    <title>Quản lý quảng cáo</title>
     <!--Bootstraps 4-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!--Fontawesome -->
@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <div class="container-fluid">
+<div class="container-fluid">
         <div class="row">
             <div class="col-md-12 padding-0">
                 <div class="tool-bar01">
@@ -68,8 +68,8 @@
                 <!--Menu sau khi responsive sẽ thấy ở bars -->
                 <div class="nav-menu-responsive">
                     <ul>
-                        <li class="nav-item"><a class="nav-link" href="../../Login-signup/login.php"><i class="far fa-user-circle"> Đăng nhập</i></a></li>
-                        <li><a class="nav-link-responsive" href="../../trangchinh.php"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Login-signup/login.php"><i class="far fa-user-circle"> Đăng nhập</i></a></li>
+                        <li><a class="nav-link-responsive" href="trangchinh.php"><i class="fas fa-home"></i> Home</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-star"></i> Star</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-tv"></i> TV Show</a></li>
                         <li><a class="nav-link-responsive" href="#"><i class="fas fa-handshake"></i> Ciné</a></li>
@@ -105,12 +105,12 @@
                 <div id="card-418071">
 				    <div class="card">
                         <div class="card-header">
-						    <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="index-post.php"><i class="fas fa-book-open"></i> Quản lý bài viết</a>
+						    <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="../../admin/post/index-post.php"><i class="fas fa-book-open"></i> Quản lý bài viết</a>
 					    </div>
 				    </div>
 				    <div class="card">
 					    <div class="card-header">
-						    <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="../../admin/business/index-business.php"><i class="fas fa-flag"></i> Quản lý quảng cáo</a>
+						    <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="#"><i class="fas fa-flag"></i> Quản lý quảng cáo</a>
 					    </div>
                     </div>
                 
@@ -127,31 +127,24 @@
                 </div>
             </div>  
                 
-                <div class="col-md-9">
-                <div class="admin-content clearfix">
-      <div class="">
-          <br>
-        <h1 style="text-align: center;color:red">Chỉnh sửa bài viết</h1>
-        <form action="create.php" method="post">
-          <div class="input-group">
-            <label>Tiêu đề</label>
-            <input type="text" name="title" class="text-input">
-          </div>
-          <div class="input-group">
-            <label>Nội dung</label>
-
-            <textarea class="text-input" name="editor1" id="editor1"></textarea>
-          </div>
-          <div class="input-group">
-            <input type="file" name="file-input" id="file-input" class="file">
-          </div>
-          <div class="input-group">
-            <button type="submit" name="update-post" class="btn" >Lưu lại</button>
-          </div>
-        </form>
-
-      </div>
-    </div>
+                <div class="col-md-9" style="padding:30px;text-align:center">
+                    <h1 style="color:red;">Chỉnh sửa quảng cáo</h1>
+                    <hr>
+                    <h2>Banner</h2>
+                    <div class="anhdong">
+                        <img src="../../image/thaydoi01.png" style="width:700px" alt="">
+                        <input type="file">
+                    </div>
+                    <hr>
+                    <h2>Poster</h2>
+                    <div class="anhdong">
+                        <img src="../../image/thaydoi02.png" style="width:700px" alt="">
+                        <input type="file">
+                    </div>
+                    <hr>
+                    <div class="luulai">
+                        <input type="submit" value="Lưu lại">
+                    </div>
                 </div>
         </div>
     </div>
@@ -213,9 +206,5 @@
                     </div>
                 </div>
             </footer>
-        <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- CKEditor 5 -->
-    <script script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/classic/ckeditor.js"></script>
 </body>
 </html>

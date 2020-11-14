@@ -109,7 +109,7 @@
 				    </div>
 				    <div class="card">
 					    <div class="card-header">
-						    <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="#"><i class="fas fa-flag"></i> Quản lý quảng cáo</a>
+						    <a class="card-link" data-toggle="collapse" data-parent="#card-418071" href="./admin/business/index-business.php"><i class="fas fa-flag"></i> Quản lý quảng cáo</a>
 					    </div>
                     </div>
                 

@@ -111,7 +111,9 @@
                     </a>
                 </div>
             </div>
-
+<?php
+require_once('./Login-signup/connect.php')
+?>
             <!-- Bài viết -->
             <div class="col-md-8 padding-0">
                 <div class="baiviet_01">
